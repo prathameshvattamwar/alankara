@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alankara - Luxury Jewelry & Accessories</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container nav-container">
+        <a href="#" class="logo">Alankara</a>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#categories">Collections</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+      <ul class="mobile-nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#categories">Collections</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <!-- <div class="hero-bg"></div> -->
+      <div class="hero-bg hero-bg-desktop"></div>
+      <div class="hero-bg-mobile"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Discover Your Signature Style</h1>
+        <p class="hero-subtitle">HANDCRAFTED LUXURY</p>
+        <!-- <p class="hero-desc">
+          Exquisite jewelry pieces that tell your unique story, handcrafted with
+          passion in the heart of Pune
+        </p> -->
+        <a href="#categories" class="btn hero-btn">Explore Collection</a>
+      </div>
+      <a href="#categories" class="scroll-down">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+      <a href="#" class="social-icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="#" class="social-icon">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="#" class="social-icon">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+      <a href="#" class="social-icon">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+
+    <!-- Categories Section -->
+    <section id="categories" class="section categories">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Collections</h2>
+          <p>Discover our exquisite range of handcrafted jewelry</p>
+        </div>
+
+        <div class="categories-container">
+          <div class="category-panel">
+            <div
+              class="category-bg"
+              style="background-image: url('earring1.jpg')"
+            ></div>
+            <div class="category-overlay"></div>
+            <div class="category-content">
+              <h2 class="category-title">Earrings</h2>
+              <p class="category-desc">
+                Elegant and statement earrings that frame your face with grace
+                and style
+              </p>
+              <a href="#products" class="category-btn" data-filter="earrings"
+                >View Collection</a
+              >
+            </div>
+          </div>
+
+          <div class="category-panel">
+            <div
+              class="category-bg"
+              style="background-image: url('ring1.jpg')"
+            ></div>
+            <div class="category-overlay"></div>
+            <div class="category-content">
+              <h2 class="category-title">Rings</h2>
+              <p class="category-desc">
+                Stunning rings that add a touch of magic to your everyday look
+              </p>
+              <a href="#products" class="category-btn" data-filter="rings"
+                >View Collection</a
+              >
+            </div>
+          </div>
+
+          <div class="category-panel">
+            <div
+              class="category-bg"
+              style="background-image: url('hair1.jpg')"
+            ></div>
+            <div class="category-overlay"></div>
+            <div class="category-content">
+              <h2 class="category-title">Hair Accessories</h2>
+              <p class="category-desc">
+                Beautiful accessories that elevate your hairstyle with elegance
+              </p>
+              <a href="#products" class="category-btn" data-filter="hair"
+                >View Collection</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="section products">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Products</h2>
+          <p>Browse our collection of handcrafted jewelry pieces</p>
+        </div>
+
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="earrings">Earrings</button>
+          <button class="filter-btn" data-filter="rings">Rings</button>
+          <button class="filter-btn" data-filter="hair">
+            Hair Accessories
+          </button>
+        </div>
+
+        <div class="products-grid">
+          <!-- Earrings -->
+          <div class="product-card" data-category="earrings" data-id="1">
+            <div class="product-image">
+              <img
+                src="https://rubans.in/cdn/shop/files/rubans-22k-gold-plated-pearl-dangle-kundan-statement-jhumka-earrings-earrings-35052131745966.jpg?v=1751569555"
+                alt="Pearl Earrings"
+              />
+              <div class="product-overlay">
+                <button class="product-overlay-btn">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Enchanted Pearl Drops</h3>
+              <p class="product-price">₹299</p>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="earrings" data-id="2">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1635767798638-3e25273a8236?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1964&q=80"
+                alt="Crystal Earrings"
+              />
+              <div class="product-overlay">
+                <button class="product-overlay-btn">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Crystal Chandelier</h3>
+              <p class="product-price">₹499</p>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="earrings" data-id="3">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1630019852942-f89202989a59?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                alt="Gold Hoops"
+              />
+              <div class="product-overlay">
+                <button class="product-overlay-btn">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Golden Hoops</h3>
+              <p class="product-price">₹199</p>
+            </div>
+          </div>
+
+          <!-- Rings -->
+          <div class="product-card" data-category="rings" data-id="4">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1598560917505-59a3ad559071?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
+                alt="Moonstone Ring"
+              />
+              <div class="product-overlay">
+                <button class="product-overlay-btn">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Mystic Moonstone</h3>
+              <p class="product-price">₹399</p>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="rings" data-id="5">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80"
+                alt="Rose Gold Ring"
+              />
+              <div class="product-overlay">
+                <button class="product-overlay-btn">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Twisted Vine</h3>
+              <p class="product-price">₹299</p>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="rings" data-id="6">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                alt="Sapphire Ring"
+              />
+              <div class="product-overlay">
+                <button class="product-overlay-btn">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Sapphire Dream</h3>
+              <p class="product-price">₹499</p>
+            </div>
+          </div>
+
+          <!-- Hair Accessories -->
+          <div class="product-card" data-category="hair" data-id="7">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                alt="Crystal Hairpins"
+              />
+              <div class="product-overlay">
+                <button class="product-overlay-btn">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Crystal Hairpin Set</h3>
+              <p class="product-price">₹289</p>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="hair" data-id="8">
+            <div class="product-image">
+              <img
+                src="https://images-cdn.ubuy.co.in/634fa22372a0dd6ca3690db5-aw-bridal-pearl-headband-vintage-large.jpg"
+                alt="Pearl Headband"
+              />
+              <div class="product-overlay">
+                <button class="product-overlay-btn">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Pearl Headband</h3>
+              <p class="product-price">₹199</p>
+            </div>
+          </div>
+
+          <div class="product-card" data-category="hair" data-id="9">
+            <div class="product-image">
+              <img
+                src="https://rubans.in/cdn/shop/files/rubans-pearl-crystal-beaded-handcrafted-floral-hair-accessory-clip-tiara-for-women-hair-accessories-1158576454.jpg?v=1751562530"
+                alt="Floral Hair Comb"
+              />
+              <div class="product-overlay">
+                <button class="product-overlay-btn">Quick View</button>
+              </div>
+            </div>
+            <div class="product-info">
+              <h3 class="product-title">Floral Hair Comb</h3>
+              <p class="product-price">₹399</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div class="product-modal">
+      <div class="product-modal-content">
+        <div class="product-modal-header">
+          <h2 class="product-modal-title">Product Title</h2>
+          <div class="product-modal-close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="product-modal-body">
+          <div class="product-modal-gallery">
+            <img src="" alt="" class="product-modal-main-image" />
+            <div class="product-modal-thumbnails">
+              <!-- Thumbnails will be added dynamically -->
+            </div>
+          </div>
+          <div class="product-modal-info">
+            <p class="product-modal-price">₹299</p>
+            <p class="product-modal-desc">Product description goes here.</p>
+            <div class="product-modal-features">
+              <h3>Features</h3>
+              <ul class="product-modal-feature-list">
+                <!-- Features will be added dynamically -->
+              </ul>
+            </div>
+            <div class="product-modal-actions">
+              <div class="product-modal-quantity">
+                <button class="quantity-minus">-</button>
+                <input type="text" value="1" readonly />
+                <button class="quantity-plus">+</button>
+              </div>
+              <a href="#" class="btn product-modal-buy-btn">Buy Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container">
+        <div class="section-title">
+          <h2>Our Passion for Craft</h2>
+        </div>
+
+        <div class="about-content">
+          <div class="about-image">
+            <img
+              src="https://ik.imagekit.io/saubldfer/hamstech-blog/wp-content/uploads/2017/02/Blog-6-Title-Image-e1487934479679-1.jpg"
+              alt="Jewelry Workshop"
+            />
+          </div>
+
+          <div class="about-text">
+            <h2 class="about-title">The Alankara Story</h2>
+            <p class="about-desc">
+              Founded in the heart of Pune, Alankara is a boutique jewelry brand
+              dedicated to creating unique adornments that celebrate
+              individuality and craftsmanship. Each piece in our collection is
+              thoughtfully designed and meticulously handcrafted using the
+              finest materials.
+            </p>
+            <p class="about-desc">
+              We believe that jewelry is more than just an accessory—it's a form
+              of self-expression, a keeper of memories, and a symbol of personal
+              style. Our designs blend traditional techniques with contemporary
+              aesthetics, resulting in timeless pieces that you'll treasure for
+              years to come.
+            </p>
+            <p class="about-desc">
+              At Alankara, we are committed to ethical practices and sustainable
+              sourcing, ensuring that our creations are as beautiful in their
+              making as they are in their appearance.
+            </p>
+            <div class="about-signature">Alankara</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-title">
+          <h2>What Our Customers Say</h2>
+        </div>
+
+        <div class="testimonials-slider">
+          <div class="testimonial-item active">
+            <p class="testimonial-text">
+              The craftsmanship of Alankara's jewelry is exceptional. I
+              purchased a pair of earrings for my anniversary, and they are
+              absolutely stunning. The attention to detail is remarkable.
+            </p>
+            <h3 class="testimonial-author">Priya Sharma</h3>
+            <p class="testimonial-role">Mumbai</p>
+          </div>
+
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              I've been a loyal customer of Alankara for years. Their pieces are
+              not only beautiful but also durable. I receive compliments every
+              time I wear my Alankara ring.
+            </p>
+            <h3 class="testimonial-author">Ananya Patel</h3>
+            <p class="testimonial-role">Delhi</p>
+          </div>
+
+          <div class="testimonial-item">
+            <p class="testimonial-text">
+              The Pearl Headband I purchased for my wedding was the perfect
+              accessory. It complemented my outfit beautifully and made me feel
+              like royalty on my special day.
+            </p>
+            <h3 class="testimonial-author">Meera Kapoor</h3>
+            <p class="testimonial-role">Bangalore</p>
+          </div>
+
+          <div class="testimonial-nav">
+            <div class="testimonial-dot active" data-index="0"></div>
+            <div class="testimonial-dot" data-index="1"></div>
+            <div class="testimonial-dot" data-index="2"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Get In Touch</h2>
+          <p>We'd love to hear from you</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2 class="contact-title">Contact Information</h2>
+            <p class="contact-desc">
+              Have questions about our products or want to place a custom order?
+              Reach out to us using the contact details below or fill out the
+              form.
+            </p>
+
+            <ul class="contact-details">
+              <li>
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div>
+                  <h3>Our Location</h3>
+                  <p>
+                    123 Jewelry Lane, Koregaon Park, Pune, Maharashtra, India
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <h3>Phone Number</h3>
+                  <p>+91 98765 43210</p>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h3>Email Address</h3>
+                  <p>hello@alankara.com</p>
+                </div>
+              </li>
+              <li>
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div>
+                  <h3>Working Hours</h3>
+                  <p>Monday - Saturday: 10:00 AM - 7:00 PM</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name</label>
+                <input type="text" id="name" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Your Email</label>
+                <input type="email" id="email" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <input type="text" id="subject" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea id="message" class="form-control" required></textarea>
+              </div>
+
+              <button type="submit" class="btn">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-column">
+            <a href="#" class="footer-logo">Alankara</a>
+            <p class="footer-desc">
+              Unique adornments for the modern soul, handcrafted with passion
+              and precision in Pune, India.
+            </p>
+            <div class="footer-social">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#categories">Collections</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Customer Service</h3>
+            <ul class="footer-links">
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">Product Care</a></li>
+              <li><a href="#">Size Guide</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Newsletter</h3>
+            <p class="footer-desc">
+              Subscribe to receive updates on new collections and special
+              offers.
+            </p>
+            <form class="newsletter-form">
+              <input
+                type="email"
+                class="newsletter-input"
+                placeholder="Your Email"
+              />
+              <button type="submit" class="newsletter-btn">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2025 Alankara. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
